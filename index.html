@@ -1,1 +1,816 @@
-Working me hai sorry 
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=5.0">
+<meta name="theme-color" content="#12060f">
+<title>Saniya Mehboob – Girls, Learn Skills. Build Your Own Income.</title>
+<meta name="description" content="A skills-first path made for girls. Learn in-demand digital skills step by step with Saniya Mehboob and build your own income from home. No experience needed.">
+<meta property="og:title" content="Saniya Mehboob – Build Your Own Income">
+<meta property="og:description" content="Made for girls. No experience. No confusion. A clear path to learn skills and start earning online.">
+<meta property="og:image" content="https://i.ibb.co/7NNngnMN/Screenshot-2026-10-19-at-6-39-28-PM.png">
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700;800&family=Playfair+Display:ital,wght@0,600;0,700;0,800;1,600;1,700;1,800&display=swap" rel="stylesheet">
+
+<!-- Meta Pixel -->
+<script>
+    !function(f,b,e,v,n,t,s){if(f.fbq)return;n=f.fbq=function(){n.callMethod?
+    n.callMethod.apply(n,arguments):n.queue.push(arguments)};if(!f._fbq)f._fbq=n;
+    n.push=n;n.loaded=!0;n.version='2.0';n.queue=[];t=b.createElement(e);t.async=!0;
+    t.src=v;s=b.getElementsByTagName(e)[0];s.parentNode.insertBefore(t,s)}
+    (window,document,'script','https://connect.facebook.net/en_US/fbevents.js');
+    fbq('init','2011685649707724'); fbq('track','PageView');
+</script>
+<noscript><style>.rv{opacity:1!important;transform:none!important;filter:none!important}</style></noscript>
+
+<style>
+@property --ang{syntax:'<angle>';initial-value:0deg;inherits:false}
+:root{
+  --bg:#12060f;
+  --bg2:#1a0a17;
+  --card:rgba(255,255,255,.045);
+  --card2:rgba(255,255,255,.07);
+  --line:rgba(255,214,200,.13);
+  --text:#fdf1f3;
+  --muted:#c9b0bd;
+  --rose:#ee6fa3;
+  --peach:#ffd9c7;
+  --violet:#b24bf3;
+  --rg:linear-gradient(135deg,#ffe3d3 0%,#f7a8a8 45%,#ee6fa3 100%);
+  --rg-text:linear-gradient(100deg,#ffe3d3,#f7a8a8,#ee6fa3,#c98bff,#ffe3d3);
+  --glow:0 12px 40px rgba(238,111,163,.38);
+  --ease:cubic-bezier(.2,.8,.2,1);
+}
+*{box-sizing:border-box;margin:0;padding:0}
+html{scroll-behavior:smooth;scroll-padding-top:72px}
+body{font-family:'Manrope',sans-serif;color:var(--text);line-height:1.7;overflow-x:hidden;-webkit-font-smoothing:antialiased;
+  background:radial-gradient(900px 520px at 85% -8%,rgba(238,111,163,.16),transparent 60%),radial-gradient(800px 500px at -10% 35%,rgba(178,75,243,.11),transparent 60%),var(--bg)}
+img{max-width:100%;display:block}
+h1,h2,h3,h4{font-family:'Playfair Display',serif;line-height:1.15;letter-spacing:-.01em}
+.container{width:100%;max-width:1160px;margin:0 auto;padding:0 20px}
+section{padding:96px 0;position:relative;overflow:hidden}
+@media(max-width:600px){section{padding:68px 0}}
+.gt{font-style:italic;background:var(--rg-text);background-size:220% auto;-webkit-background-clip:text;background-clip:text;-webkit-text-fill-color:transparent;animation:shimmer 7s linear infinite}
+@keyframes shimmer{to{background-position:220% center}}
+.eyebrow{display:inline-flex;align-items:center;gap:10px;font-size:.74rem;font-weight:800;letter-spacing:.2em;text-transform:uppercase;color:var(--peach);margin-bottom:16px}
+.eyebrow::before,.eyebrow::after{content:'';width:26px;height:1px;background:linear-gradient(90deg,transparent,var(--rose))}
+.eyebrow::after{background:linear-gradient(270deg,transparent,var(--rose))}
+.sec-title{font-size:clamp(1.9rem,5vw,3.1rem);font-weight:700;margin-bottom:14px}
+.sec-sub{color:var(--muted);max-width:620px;font-size:1.05rem}
+.center{text-align:center}.center .sec-sub{margin:0 auto}
+.alt{background:linear-gradient(180deg,rgba(255,255,255,.03),rgba(255,255,255,.015))}
+
+/* progress + cursor glow */
+#bar{position:fixed;top:0;left:0;height:3px;width:100%;background:var(--rg);transform-origin:left;transform:scaleX(0);z-index:1000;box-shadow:0 0 14px rgba(238,111,163,.8)}
+.cursor{position:fixed;top:0;left:0;width:420px;height:420px;margin:-210px 0 0 -210px;border-radius:50%;background:radial-gradient(closest-side,rgba(238,111,163,.16),transparent);pointer-events:none;z-index:1;opacity:0;transition:opacity .4s;will-change:transform}
+.cursor.on{opacity:1}
+
+/* BUTTONS */
+.btn{display:inline-flex;align-items:center;justify-content:center;gap:10px;background:var(--rg);color:#2b0b1d;font-weight:800;font-size:1.02rem;padding:17px 34px;border:none;border-radius:60px;cursor:pointer;box-shadow:var(--glow);font-family:'Manrope',sans-serif;text-decoration:none;position:relative;overflow:hidden;isolation:isolate;
+  translate:var(--tx,0px) var(--ty,0px);transition:translate .25s var(--ease),scale .25s var(--ease),box-shadow .3s}
+.btn:hover{scale:1.04;box-shadow:0 16px 54px rgba(238,111,163,.6)}
+.btn:active{scale:.97}
+.btn::after{content:'';position:absolute;top:0;left:-120%;width:55%;height:100%;background:linear-gradient(100deg,transparent,rgba(255,255,255,.75),transparent);transform:skewX(-20deg);animation:sheen 3.6s infinite;z-index:-1}
+@keyframes sheen{0%{left:-120%}55%,100%{left:170%}}
+.btn.big{padding:19px 40px;font-size:1.08rem}
+.pulse{animation:pulse 2.6s infinite}
+@keyframes pulse{0%{box-shadow:0 10px 34px rgba(238,111,163,.4),0 0 0 0 rgba(238,111,163,.5)}70%,100%{box-shadow:0 10px 34px rgba(238,111,163,.4),0 0 0 22px rgba(238,111,163,0)}}
+.btn-ghost{display:inline-flex;align-items:center;gap:8px;color:var(--peach);text-decoration:none;font-weight:700;font-size:.98rem;padding:16px 8px;border-bottom:1px solid transparent;transition:.3s}
+.btn-ghost:hover{border-color:var(--peach);gap:12px}
+
+/* NAV */
+nav{position:fixed;top:0;left:0;right:0;z-index:900;background:rgba(18,6,15,.72);backdrop-filter:blur(16px);-webkit-backdrop-filter:blur(16px);border-bottom:1px solid var(--line)}
+.nav-in{display:flex;align-items:center;justify-content:space-between;height:66px}
+.logo{font-family:'Playfair Display',serif;font-weight:700;font-size:1.3rem;display:flex;align-items:center;gap:8px}
+.logo i{font-style:normal;color:var(--rose);animation:twinkle 3s ease-in-out infinite}
+.nav-links{display:flex;gap:28px;align-items:center}
+.nav-links a{color:var(--muted);text-decoration:none;font-size:.92rem;font-weight:600;transition:.2s}
+.nav-links a:hover{color:var(--peach)}
+.nav-cta{padding:11px 22px;font-size:.88rem}
+@media(max-width:820px){.nav-links a.hide-m{display:none}}
+@keyframes twinkle{0%,100%{transform:scale(.8) rotate(0);opacity:.6}50%{transform:scale(1.25) rotate(25deg);opacity:1}}
+
+/* HERO */
+.hero{padding:132px 0 70px}
+.aurora{position:absolute;inset:0;pointer-events:none;overflow:hidden}
+.aurora i{position:absolute;border-radius:50%;filter:blur(80px);opacity:.55;animation:drift 16s ease-in-out infinite;will-change:transform}
+.aurora .a1{width:420px;height:420px;background:#c2306e;top:-120px;left:-120px}
+.aurora .a2{width:380px;height:380px;background:#7a2bd0;top:80px;right:-120px;animation-delay:-6s}
+.aurora .a3{width:320px;height:320px;background:#f09a8a;bottom:-120px;left:38%;animation-delay:-11s;opacity:.35}
+@keyframes drift{0%,100%{transform:translate(0,0) scale(1)}33%{transform:translate(40px,-30px) scale(1.12)}66%{transform:translate(-30px,34px) scale(.94)}}
+#dust{position:absolute;inset:0;width:100%;height:100%;pointer-events:none}
+.hero-grid{position:relative;z-index:2;display:grid;grid-template-columns:1.1fr .9fr;gap:56px;align-items:center}
+@media(max-width:900px){.hero-grid{grid-template-columns:1fr;gap:54px;text-align:center}}
+.pill{display:inline-flex;align-items:center;gap:10px;background:rgba(238,111,163,.1);border:1px solid rgba(238,111,163,.4);color:var(--peach);padding:9px 20px;border-radius:50px;font-size:.84rem;font-weight:700;margin-bottom:26px;backdrop-filter:blur(8px)}
+.pill .dot{width:8px;height:8px;border-radius:50%;background:#4ade80;animation:dot 1.8s infinite}
+@keyframes dot{0%{box-shadow:0 0 0 0 rgba(74,222,128,.7)}70%,100%{box-shadow:0 0 0 10px rgba(74,222,128,0)}}
+.hero h1{font-size:clamp(2.3rem,5.4vw,3.9rem);font-weight:800;margin-bottom:22px}
+.w{display:inline-block;overflow:hidden;vertical-align:top;padding-bottom:.14em;margin-bottom:-.14em}
+.wi{display:inline-block;opacity:0;transform:translateY(110%);filter:blur(8px);animation:wup 1s var(--ease) calc(var(--i)*75ms + 200ms) forwards}
+@keyframes wup{to{opacity:1;transform:none;filter:none}}
+.shine .wi{font-style:italic;background:var(--rg-text);background-size:220% auto;-webkit-background-clip:text;background-clip:text;-webkit-text-fill-color:transparent;
+  animation:wup 1s var(--ease) calc(var(--i)*75ms + 200ms) forwards,shimmer 7s linear infinite}
+.hero p.lead{color:var(--muted);font-size:clamp(1.02rem,2.4vw,1.2rem);max-width:560px;margin-bottom:34px}
+@media(max-width:900px){.hero p.lead{margin-left:auto;margin-right:auto}}
+.cta-group{display:flex;flex-wrap:wrap;align-items:center;gap:14px 26px}
+@media(max-width:900px){.cta-group{justify-content:center}}
+.ticks{display:flex;flex-wrap:wrap;gap:10px 26px;margin-top:30px;color:var(--muted);font-size:.92rem;font-weight:600}
+@media(max-width:900px){.ticks{justify-content:center}}
+.ticks span::before{content:'✦';color:var(--rose);margin-right:9px}
+
+/* HERO PHOTO */
+.hero-visual{position:relative;max-width:460px;width:100%;margin:0 auto}
+.float{animation:bob 7s ease-in-out infinite}
+@keyframes bob{0%,100%{transform:translateY(0)}50%{transform:translateY(-12px)}}
+.tilt{position:relative;transition:transform .3s ease-out;transform-style:preserve-3d}
+.ring{padding:3px;border-radius:34px;background:conic-gradient(from var(--ang),#ffe3d3,#ee6fa3,#b24bf3,#f7a8a8,#ffe3d3);animation:spin 7s linear infinite;box-shadow:0 30px 80px rgba(238,111,163,.35)}
+@keyframes spin{to{--ang:360deg}}
+.ph{border-radius:31px;overflow:hidden;background:#1d0a1a;min-height:320px}
+.ph img{width:100%;height:auto;max-height:640px;object-fit:cover;object-position:center 15%}
+.chip{position:absolute;z-index:3;background:rgba(26,10,23,.82);backdrop-filter:blur(12px);-webkit-backdrop-filter:blur(12px);border:1px solid var(--line);padding:9px 16px;border-radius:40px;font-size:.8rem;font-weight:700;color:var(--text);box-shadow:0 12px 30px rgba(0,0,0,.4);white-space:nowrap;animation:bob 6s ease-in-out infinite}
+.chip.c1{top:8%;left:-6%;animation-delay:-1s}
+.chip.c2{top:44%;right:-7%;animation-delay:-3s}
+.chip.c3{bottom:16%;left:-4%;animation-delay:-5s}
+@media(max-width:520px){.chip.c1{left:-2%}.chip.c2{right:-2%}.chip.c3{left:-1%}}
+.name-tag{position:absolute;left:50%;bottom:-22px;transform:translateX(-50%);z-index:4;white-space:nowrap;background:var(--rg);color:#2b0b1d;padding:11px 26px;border-radius:50px;box-shadow:var(--glow);text-align:center;line-height:1.25}
+.name-tag b{display:block;font-family:'Playfair Display',serif;font-size:1.05rem}
+.name-tag span{font-size:.72rem;font-weight:800;letter-spacing:.1em;text-transform:uppercase;opacity:.8}
+
+/* TICKER */
+.ticker{border-block:1px solid var(--line);background:rgba(255,255,255,.025);overflow:hidden;padding:18px 0;position:relative;z-index:2}
+.ticker .run{display:flex;width:max-content;animation:scrollx 32s linear infinite}
+.ticker span{font-family:'Playfair Display',serif;font-style:italic;font-size:1.25rem;color:var(--peach);padding:0 26px;white-space:nowrap}
+.ticker span::after{content:'✦';color:var(--rose);margin-left:52px;font-style:normal;font-size:.9rem}
+@keyframes scrollx{to{transform:translateX(-50%)}}
+
+/* CARDS (spotlight) */
+.grid{display:grid;gap:18px}
+.g2{grid-template-columns:repeat(2,1fr)}.g4{grid-template-columns:repeat(4,1fr)}
+@media(max-width:960px){.g4{grid-template-columns:repeat(2,1fr)}}
+@media(max-width:600px){.g2,.g4{grid-template-columns:1fr}}
+.card{position:relative;background:var(--card);border:1px solid var(--line);border-radius:24px;padding:28px;overflow:hidden;transition:transform .45s var(--ease),border-color .3s}
+.card::before{content:'';position:absolute;inset:0;background:radial-gradient(360px circle at var(--mx,50%) var(--my,50%),rgba(238,111,163,.2),transparent 45%);opacity:0;transition:opacity .35s;pointer-events:none}
+.card:hover{transform:translateY(-8px);border-color:rgba(238,111,163,.5)}
+.card:hover::before{opacity:1}
+.card .ic{font-size:1.9rem;margin-bottom:14px;display:inline-block;transition:transform .5s var(--ease)}
+.card:hover .ic{transform:scale(1.25) rotate(-8deg)}
+.card p{color:var(--muted);font-size:1rem;position:relative}
+.card h3{font-size:1.15rem;margin-bottom:8px;position:relative}
+
+/* VOICE */
+.voice{margin-top:46px;position:relative;background:linear-gradient(180deg,rgba(238,111,163,.1),rgba(178,75,243,.06));border:1px solid rgba(238,111,163,.28);border-radius:30px;padding:44px 26px;text-align:center;overflow:hidden}
+.voice small{letter-spacing:.2em;color:var(--peach);font-weight:800;font-size:.72rem}
+.voice .q{font-family:'Playfair Display',serif;font-style:italic;font-size:clamp(1.15rem,2.8vw,1.6rem);font-weight:600;margin-top:14px}
+.voice .last{margin-top:24px;color:var(--muted)}
+.cta-row{text-align:center;margin-top:46px}
+
+/* REALITY */
+.reality{text-align:center}
+.reality .big{font-size:clamp(2.2rem,6.4vw,4rem);font-weight:800;margin-bottom:26px}
+.reality p{color:var(--muted);font-size:1.15rem;margin-bottom:8px}
+.reality p.em{color:var(--text);font-weight:700;margin-top:24px;font-size:1.2rem}
+
+/* MENTOR */
+.mentor-wrap{display:grid;grid-template-columns:.95fr 1.05fr;gap:60px;align-items:center}
+@media(max-width:900px){.mentor-wrap{grid-template-columns:1fr;gap:40px}}
+.mentor-photo{max-width:440px;width:100%;margin:0 auto;position:relative}
+.mentor-text h2{font-size:clamp(2rem,4.8vw,3rem);font-weight:700;margin-bottom:18px}
+.mentor-text p{color:var(--muted);margin-bottom:14px;font-size:1.06rem}
+.mentor-text .quote-box{margin:22px 0;padding:20px 22px;border-left:3px solid var(--rose);background:var(--card);border-radius:0 18px 18px 0}
+.mentor-text .quote-box p{margin:0;color:var(--text);font-family:'Playfair Display',serif;font-style:italic;font-size:1.15rem}
+.tags{display:flex;flex-wrap:wrap;gap:10px;margin:20px 0 26px}
+.tags span{background:var(--card2);border:1px solid var(--line);padding:9px 18px;border-radius:40px;font-size:.88rem;font-weight:700}
+.stats{display:grid;grid-template-columns:repeat(3,1fr);gap:12px;margin-bottom:30px}
+.stat{background:var(--card);border:1px solid var(--line);border-radius:18px;padding:18px 8px;text-align:center;transition:.4s var(--ease)}
+.stat:hover{transform:translateY(-6px);border-color:rgba(238,111,163,.5)}
+.stat i{font-style:normal;font-size:1.6rem;display:block;margin-bottom:2px}
+.stat span{color:var(--muted);font-size:.8rem;font-weight:700}
+
+/* FEEDBACK MARQUEE (optional) */
+.marq{overflow:hidden;margin-top:44px;mask-image:linear-gradient(90deg,transparent,#000 6%,#000 94%,transparent);-webkit-mask-image:linear-gradient(90deg,transparent,#000 6%,#000 94%,transparent)}
+.track{display:flex;gap:16px;width:max-content;animation:scrollx 55s linear infinite}
+.track:hover{animation-play-state:paused}
+.shot{flex-shrink:0;width:230px;height:410px;border-radius:20px;overflow:hidden;border:1px solid var(--line);background:#000;cursor:zoom-in;transition:.35s var(--ease)}
+.shot:hover{transform:scale(1.04);border-color:var(--rose)}
+.shot img{width:100%;height:100%;object-fit:cover}
+@media(max-width:600px){.shot{width:180px;height:330px}}
+.note{color:var(--muted);font-size:.9rem;margin-top:22px}
+.lb{position:fixed;inset:0;background:rgba(8,2,6,.92);z-index:12000;display:none;align-items:center;justify-content:center;padding:20px}
+.lb.show{display:flex}
+.lb img{max-height:90vh;max-width:92vw;border-radius:16px}
+.lb button{position:absolute;top:18px;right:22px;background:none;border:none;color:#fff;font-size:2.2rem;cursor:pointer}
+
+/* IMAGINE */
+.shift{display:grid;grid-template-columns:1fr auto 1fr;align-items:center;gap:16px;background:var(--card);border:1px solid var(--line);border-radius:22px;padding:20px 26px;margin-bottom:14px;transition:.4s var(--ease)}
+.shift:hover{border-color:rgba(238,111,163,.5);transform:scale(1.015)}
+.shift .from{color:var(--muted)}.shift .arrow{color:var(--rose);font-weight:800;font-size:1.3rem;animation:nudge 1.8s ease-in-out infinite}.shift .to{font-weight:800}
+@keyframes nudge{50%{transform:translateX(8px)}}
+@media(max-width:560px){.shift{grid-template-columns:1fr;text-align:center;gap:4px}.shift .arrow{transform:rotate(90deg);animation:none}}
+.dream{text-align:center;margin-top:46px}
+.dream p{color:var(--muted);font-size:1.12rem;margin-bottom:6px}
+.dream .strong{color:var(--text);font-weight:800;font-size:1.3rem;margin-top:16px}
+
+/* WHAT IF */
+.qa{display:grid;grid-template-columns:auto 1fr;gap:20px;background:var(--card);border:1px solid var(--line);border-radius:22px;padding:24px;margin-bottom:14px;transition:.4s var(--ease)}
+.qa:hover{border-color:rgba(238,111,163,.5);transform:translateY(-4px)}
+.qa .n{width:46px;height:46px;border-radius:14px;background:var(--rg);color:#2b0b1d;font-weight:800;display:flex;align-items:center;justify-content:center;font-size:1.25rem;font-family:'Playfair Display',serif}
+.qa h4{font-size:1.12rem;margin-bottom:4px}
+.qa p{color:var(--muted)}
+
+/* PURPOSE */
+.purpose{text-align:center}
+.purpose p{color:var(--muted);font-size:1.18rem;margin-bottom:6px}
+.purpose p.big{color:var(--text);font-weight:700;font-size:1.35rem;margin-top:24px;font-family:'Playfair Display',serif;font-style:italic}
+
+/* STEPS */
+.step{padding-top:34px}
+.step .num{position:absolute;top:-6px;right:14px;font-family:'Playfair Display',serif;font-weight:800;font-size:4.4rem;color:rgba(255,214,200,.07);line-height:1}
+
+/* ACCORDION */
+.acc{background:var(--card);border:1px solid var(--line);border-radius:20px;margin-bottom:12px;transition:border-color .3s,background .3s}
+.acc.open{border-color:rgba(238,111,163,.5);background:var(--card2)}
+.acc-q{width:100%;background:none;border:none;color:var(--text);font:inherit;font-weight:700;font-size:1.02rem;text-align:left;padding:22px 24px;display:flex;justify-content:space-between;align-items:center;gap:16px;cursor:pointer}
+.pm{position:relative;flex-shrink:0;width:26px;height:26px;border-radius:50%;background:rgba(238,111,163,.15)}
+.pm::before,.pm::after{content:'';position:absolute;top:50%;left:50%;width:10px;height:2px;background:var(--peach);transform:translate(-50%,-50%);transition:transform .4s var(--ease)}
+.pm::after{transform:translate(-50%,-50%) rotate(90deg)}
+.acc.open .pm::after{transform:translate(-50%,-50%) rotate(0)}
+.acc-body{display:grid;grid-template-rows:0fr;transition:grid-template-rows .5s var(--ease)}
+.acc.open .acc-body{grid-template-rows:1fr}
+.acc-body>div{overflow:hidden}
+.acc-body p{padding:0 24px 24px;color:var(--muted)}
+
+/* FINAL */
+.final{text-align:center}
+.final .container{position:relative;z-index:2}
+.final h2{font-size:clamp(2rem,5.4vw,3.4rem);font-weight:700;max-width:800px;margin:0 auto 16px}
+.final p.sub{color:var(--muted);font-size:1.12rem;margin-bottom:34px}
+.how{max-width:680px;margin:40px auto 0;background:var(--card);border:1px solid var(--line);border-radius:26px;padding:30px;text-align:left}
+.how h4{margin-bottom:14px;color:var(--peach);font-size:1.25rem}
+.how ol{margin:0 0 0 22px}
+.how li{color:var(--muted);margin:8px 0}
+.how li b{color:var(--text)}
+
+/* FOOTER */
+footer{border-top:1px solid var(--line);padding:50px 0 40px;text-align:center;background:rgba(0,0,0,.2)}
+.quote{font-family:'Playfair Display',serif;font-style:italic;font-weight:600;font-size:1.2rem;max-width:560px;margin:12px auto 22px;color:var(--peach)}
+footer small{color:var(--muted);display:block;margin-top:6px}
+.linkbtn{background:none;border:none;color:var(--muted);text-decoration:underline;cursor:pointer;font-size:.88rem;margin-top:8px;font-family:inherit}
+.linkbtn:hover{color:var(--peach)}
+
+/* MODALS */
+.backdrop{position:fixed;inset:0;background:rgba(8,2,6,.72);backdrop-filter:blur(10px);-webkit-backdrop-filter:blur(10px);z-index:9998;opacity:0;visibility:hidden;transition:.4s}
+.backdrop.show{opacity:1;visibility:visible}
+.modal{position:fixed;top:50%;left:50%;transform:translate(-50%,-46%) scale(.94);z-index:9999;width:92%;max-width:470px;max-height:90vh;overflow-y:auto;background:linear-gradient(180deg,#24101f,#1a0a17);border:1px solid rgba(238,111,163,.4);border-radius:28px;padding:34px 28px;opacity:0;visibility:hidden;transition:.45s var(--ease);box-shadow:0 30px 90px rgba(0,0,0,.6),0 0 0 1px rgba(255,255,255,.03) inset}
+.modal.show{opacity:1;visibility:visible;transform:translate(-50%,-50%) scale(1)}
+.modal .x{position:absolute;top:14px;right:18px;background:none;border:none;color:var(--muted);font-size:1.8rem;cursor:pointer;transition:.2s}
+.modal .x:hover{color:var(--peach);transform:rotate(90deg)}
+.modal h3{font-size:1.55rem;margin-bottom:4px}
+.modal .msub{color:var(--muted);font-size:.92rem;margin-bottom:22px}
+.f{margin-bottom:15px}
+.f label{display:block;font-size:.84rem;font-weight:700;margin-bottom:7px;color:#ecd9e2}
+.f input,.f select{width:100%;background:rgba(255,255,255,.05);border:1.5px solid var(--line);color:var(--text);border-radius:14px;padding:14px 15px;font-size:1rem;font-family:inherit;transition:.25s}
+.f input::placeholder{color:#8f7a88}
+.f input:focus,.f select:focus{outline:none;border-color:var(--rose);box-shadow:0 0 0 4px rgba(238,111,163,.18);background:rgba(255,255,255,.08)}
+.f select option{background:#24101f;color:var(--text)}
+.row2{display:grid;grid-template-columns:1fr 1fr;gap:12px}
+.err{color:#ff8a9b;font-size:.82rem;margin-top:5px;display:none}
+.f.bad .err{display:block}.f.bad input,.f.bad select{border-color:#ff6b81;animation:shake .4s}
+@keyframes shake{25%{transform:translateX(-5px)}75%{transform:translateX(5px)}}
+.secure{text-align:center;color:var(--muted);font-size:.78rem;margin-top:14px}
+.girls-note{display:flex;gap:10px;align-items:center;background:rgba(238,111,163,.1);border:1px solid rgba(238,111,163,.3);border-radius:14px;padding:11px 14px;font-size:.84rem;color:var(--peach);font-weight:600;margin-bottom:18px}
+.pp p{color:var(--muted);font-size:.93rem;margin-bottom:12px}
+.pp strong{color:var(--text)}
+.ok{text-align:center;display:none}
+.ok.show{display:block;animation:fade .6s var(--ease)}
+@keyframes fade{from{opacity:0;transform:translateY(10px)}}
+.ok svg{width:86px;height:86px;margin:6px auto 16px;display:block}
+.ok circle{stroke:var(--rose);stroke-width:3;fill:none;stroke-dasharray:166;stroke-dashoffset:166;animation:draw .8s var(--ease) .1s forwards}
+.ok path{stroke:var(--peach);stroke-width:4;fill:none;stroke-linecap:round;stroke-linejoin:round;stroke-dasharray:48;stroke-dashoffset:48;animation:draw .5s var(--ease) .8s forwards}
+@keyframes draw{to{stroke-dashoffset:0}}
+.ok p{color:var(--muted);margin:6px 0 22px}
+
+/* STICKY MOBILE CTA */
+.sticky{position:fixed;left:0;right:0;bottom:0;z-index:800;padding:10px 14px calc(10px + env(safe-area-inset-bottom));background:rgba(18,6,15,.9);backdrop-filter:blur(14px);-webkit-backdrop-filter:blur(14px);border-top:1px solid var(--line);display:none;transform:translateY(110%);transition:transform .5s var(--ease)}
+.sticky.show{transform:none}
+.sticky .btn{width:100%;padding:15px}
+@media(max-width:768px){.sticky{display:block}}
+
+/* REVEAL */
+.rv{opacity:0;transform:translateY(36px);transition:opacity .9s var(--ease),transform .9s var(--ease);transition-delay:var(--d,0s)}
+.rv-l{transform:translateX(-50px)}.rv-r{transform:translateX(50px)}.rv-s{transform:scale(.9)}
+.rv.in{opacity:1;transform:none}
+
+@media(prefers-reduced-motion:reduce){
+  *,*::before,*::after{animation:none!important;transition:none!important}
+  .rv,.wi{opacity:1!important;transform:none!important;filter:none!important}
+  .cursor,#dust{display:none}
+}
+</style>
+</head>
+<body>
+<noscript><img height="1" width="1" style="display:none" src="https://www.facebook.com/tr?id=2011685649707724&ev=PageView&noscript=1" alt=""/></noscript>
+<div id="bar"></div>
+<div class="cursor" id="cursor"></div>
+
+<!-- NAV -->
+<nav>
+  <div class="container nav-in">
+    <div class="logo"><i>✦</i> Saniya <span class="gt">Mehboob</span></div>
+    <div class="nav-links">
+      <a href="#about" class="hide-m">About</a>
+      <a href="#how" class="hide-m">How it works</a>
+      <a href="#stories" class="hide-m" id="navStories">Stories</a>
+      <a href="#faq" class="hide-m">FAQ</a>
+      <button class="btn nav-cta mag open-any" data-source="Navbar">Join Channel</button>
+    </div>
+  </div>
+</nav>
+
+<!-- HERO -->
+<section class="hero">
+  <div class="aurora"><i class="a1"></i><i class="a2"></i><i class="a3"></i></div>
+  <canvas id="dust"></canvas>
+  <div class="container hero-grid">
+    <div class="hero-copy">
+      <div class="pill rv"><span class="dot"></span> ✦ Made only for Girls &amp; Women</div>
+      <h1 id="h1">Girls, Stop Depending on Others. <em class="shine">Start Earning With Skills.</em></h1>
+      <p class="lead rv" style="--d:.5s">No experience. No degree. No confusion. A clear, step-by-step path to learn in-demand digital skills and build your own income — from your phone, from the comfort of home.</p>
+      <div class="cta-group rv" style="--d:.7s">
+        <button class="btn big pulse mag open-any" data-source="Hero">💬 Join the WhatsApp Channel</button>
+        <a href="#how" class="btn-ghost">See how it works <span>↓</span></a>
+      </div>
+      <div class="ticks rv" style="--d:.9s">
+        <span>No Experience Needed</span>
+        <span>Learn on Your Phone</span>
+        <span>Beginner Friendly</span>
+      </div>
+    </div>
+
+    <div class="hero-visual rv rv-s" style="--d:.4s">
+      <div class="float">
+        <div class="tilt" id="tilt">
+          <div class="ring"><div class="ph"><img src="https://i.ibb.co/7NNngnMN/Screenshot-2026-10-19-at-6-39-28-PM.png" alt="Saniya Mehboob – Skills Mentor for Girls" fetchpriority="high"></div></div>
+          <div class="chip c1">✦ Skills Mentor</div>
+          <div class="chip c2">📱 Learn on Phone</div>
+          <div class="chip c3">💖 Made for Girls</div>
+          <div class="name-tag"><b>Saniya Mehboob</b><span>Skills Mentor</span></div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- TICKER -->
+<div class="ticker" aria-hidden="true">
+  <div class="run" id="ticker"></div>
+</div>
+
+<!-- SOUND FAMILIAR -->
+<section>
+  <div class="container">
+    <div class="center rv">
+      <span class="eyebrow">Sound Familiar?</span>
+      <h2 class="sec-title">This Might Feel <span class="gt">Uncomfortably Familiar…</span></h2>
+    </div>
+    <div class="grid g2" style="margin-top:40px">
+      <div class="card spot rv rv-l"><div class="ic">💭</div><p>You want your own money… but you don't know where to start.</p></div>
+      <div class="card spot rv rv-r"><div class="ic">📱</div><p>You save reels about earning online… but never begin.</p></div>
+      <div class="card spot rv rv-l" style="--d:.1s"><div class="ic">🙋‍♀️</div><p>You wish you didn't have to ask for every little expense.</p></div>
+      <div class="card spot rv rv-r" style="--d:.1s"><div class="ic">😔</div><p>You keep doubting yourself, every single day.</p></div>
+    </div>
+    <div class="voice rv">
+      <small>THE INNER VOICE THAT HOLDS YOU BACK</small>
+      <div class="q">"I don't have any skills."</div>
+      <div class="q">"What if I fail?"</div>
+      <div class="q">"What will people say?"</div>
+      <div class="q">"Maybe this isn't for girls like me."</div>
+      <p class="last">And the worst part? You slowly start believing it.</p>
+    </div>
+    <div class="cta-row rv"><button class="btn mag open-any" data-source="Familiar Section">👉 Join the WhatsApp Channel</button></div>
+  </div>
+</section>
+
+<!-- REALITY -->
+<section class="reality alt">
+  <div class="container rv">
+    <span class="eyebrow">Reality Check</span>
+    <h2 class="big">You're Not <span class="gt">The Problem.</span></h2>
+    <p>You were never taught how to earn.</p>
+    <p>No one showed you which skills actually matter.</p>
+    <p>No one gave you a roadmap. No one told you where to begin.</p>
+    <p class="em">You stayed confused — not because you can't do it,<br>but because no one made it simple for you.</p>
+    <div class="cta-row"><button class="btn mag open-any" data-source="Reality Section">✨ Get Your Roadmap</button></div>
+  </div>
+</section>
+
+<!-- MENTOR -->
+<section id="about">
+  <div class="container mentor-wrap">
+    <div class="mentor-photo rv rv-l">
+      <div class="ring"><div class="ph"><img src="https://i.ibb.co/7NNngnMN/Screenshot-2026-10-19-at-6-39-28-PM.png" alt="Saniya Mehboob" loading="lazy"></div></div>
+    </div>
+    <div class="mentor-text rv rv-r">
+      <span class="eyebrow" style="padding-left:0">Meet Your Mentor</span>
+      <h2>Hi, I'm <span class="gt">Saniya Mehboob</span></h2>
+      <p>I believe every girl deserves the confidence of having her own income. Skills are the one thing no one can take away from you — and I'm here to give you the clear roadmap I wish someone had given me.</p>
+      <div class="quote-box"><p>"Build your own income, from home — no experience needed."</p></div>
+      <div class="tags"><span>🎯 Skills Mentor</span><span>💻 Digital Creator</span><span>🚀 Income Coach</span></div>
+      <div class="stats">
+        <div class="stat"><i>👩</i><span>Made for Girls</span></div>
+        <div class="stat"><i>📱</i><span>Learn on Phone</span></div>
+        <div class="stat"><i>🌱</i><span>Beginner Friendly</span></div>
+      </div>
+      <button class="btn mag open-any" data-source="Mentor Section">💬 Join Saniya's Channel</button>
+    </div>
+  </div>
+</section>
+
+<!-- FEEDBACK (optional: FEEDBACK_IMAGES me links daalo; khali ho to section apne aap hat jaata hai) -->
+<section id="stories" class="alt">
+  <div class="container center rv">
+    <span class="eyebrow">Student Success Stories</span>
+    <h2 class="sec-title">See How Girls Are <span class="gt">Changing Their Lives</span></h2>
+    <p class="sec-sub">Real conversations. Real feedback. Tap any screenshot to view it full size.</p>
+  </div>
+  <div class="marq"><div class="track" id="track"></div></div>
+  <div class="container center">
+    <p class="note">Results vary from person to person and depend on effort and consistency.</p>
+    <div class="cta-row"><button class="btn mag open-any" data-source="Feedback Section">💬 Join &amp; Start Your Story</button></div>
+  </div>
+</section>
+
+<!-- IMAGINE -->
+<section class="alt">
+  <div class="container">
+    <div class="center rv">
+      <span class="eyebrow">The Vision</span>
+      <h2 class="sec-title">Imagine <span class="gt">This…</span></h2>
+    </div>
+    <div style="max-width:780px;margin:40px auto 0">
+      <div class="shift rv rv-l"><div class="from">📱 Scrolling reels</div><div class="arrow">→</div><div class="to">Creating &amp; earning from content</div></div>
+      <div class="shift rv rv-r"><div class="from">💸 Asking for money</div><div class="arrow">→</div><div class="to">Earning your own</div></div>
+      <div class="shift rv rv-l"><div class="from">😰 Feeling stuck</div><div class="arrow">→</div><div class="to">Moving forward every week</div></div>
+      <div class="shift rv rv-r"><div class="from">🧠 Self-doubt</div><div class="arrow">→</div><div class="to">Real confidence</div></div>
+    </div>
+    <div class="dream rv">
+      <p>You wake up… check your phone…</p>
+      <p>and see money <b style="color:var(--peach)">you</b> earned yourself.</p>
+      <p class="strong">No asking. No explaining. No depending.</p>
+      <p style="margin-top:10px">Not because someone gave it to you — but because you built it.</p>
+      <div class="cta-row"><button class="btn mag open-any" data-source="Imagine Section">👉 Join the WhatsApp Channel</button></div>
+    </div>
+  </div>
+</section>
+
+<!-- BUT WHAT IF -->
+<section>
+  <div class="container" style="max-width:840px">
+    <div class="center rv">
+      <span class="eyebrow">No More Excuses</span>
+      <h2 class="sec-title">"But what <span class="gt">if…"</span></h2>
+    </div>
+    <div style="margin-top:38px">
+      <div class="qa rv"><div class="n">?</div><div><h4>"What if I don't have any skills?"</h4><p>Perfect. That's exactly where you start. We build everything from zero.</p></div></div>
+      <div class="qa rv"><div class="n">?</div><div><h4>"What if I don't have time?"</h4><p>You don't need hours. You need 1–2 hours of consistency a day.</p></div></div>
+      <div class="qa rv"><div class="n">?</div><div><h4>"What if I fail?"</h4><p>You only fail when you don't start. Action is the only cure.</p></div></div>
+      <div class="qa rv"><div class="n">?</div><div><h4>"What if I'm not confident?"</h4><p>Confidence comes after you begin — not before.</p></div></div>
+    </div>
+  </div>
+</section>
+
+<!-- PURPOSE -->
+<section class="purpose alt">
+  <div class="container rv">
+    <span class="eyebrow">Our Purpose</span>
+    <h2 class="sec-title">This Is <span class="gt">Bigger Than Money</span></h2>
+    <p>Not asking before spending.</p>
+    <p>Not depending on anyone.</p>
+    <p>Not settling for less.</p>
+    <p class="big">This is about building a life where you have choices.<br>And that starts with skills.</p>
+  </div>
+</section>
+
+<!-- STEPS -->
+<section id="how">
+  <div class="container">
+    <div class="center rv">
+      <span class="eyebrow">After You Join</span>
+      <h2 class="sec-title">What Happens <span class="gt">Next?</span></h2>
+    </div>
+    <div class="grid g4" style="margin-top:44px">
+      <div class="card spot step rv"><span class="num">01</span><div class="ic">⚡</div><h3>Join the Channel</h3><p>Fill the quick form and you'll land straight in Saniya's WhatsApp Channel.</p></div>
+      <div class="card spot step rv" style="--d:.1s"><span class="num">02</span><div class="ic">🎓</div><h3>Beginner-Friendly Learning</h3><p>No jargon. No confusion. A clear roadmap from day one.</p></div>
+      <div class="card spot step rv" style="--d:.2s"><span class="num">03</span><div class="ic">💼</div><h3>Real-World Practice</h3><p>Learn by doing, not just by watching videos.</p></div>
+      <div class="card spot step rv" style="--d:.3s"><span class="num">04</span><div class="ic">🤝</div><h3>Ongoing Guidance</h3><p>Updates and guidance from Saniya, so you never do it alone.</p></div>
+    </div>
+  </div>
+</section>
+
+<!-- FAQ -->
+<section id="faq" class="alt">
+  <div class="container" style="max-width:840px">
+    <div class="center rv">
+      <span class="eyebrow">FAQ</span>
+      <h2 class="sec-title">Frequently Asked <span class="gt">Questions</span></h2>
+    </div>
+    <div style="margin-top:38px" class="rv" id="accs">
+      <div class="acc open"><button class="acc-q" aria-expanded="true">What kind of skills will I learn?<span class="pm"></span></button><div class="acc-body"><div><p>Practical digital skills such as social media, content creation, affiliate marketing and more — all skill-based and in demand.</p></div></div></div>
+      <div class="acc"><button class="acc-q" aria-expanded="false">Is this only for girls?<span class="pm"></span></button><div class="acc-body"><div><p>Yes. This page and Saniya's channel are made for girls and women — students, homemakers and working women.</p></div></div></div>
+      <div class="acc"><button class="acc-q" aria-expanded="false">Do I need any prior experience?<span class="pm"></span></button><div class="acc-body"><div><p>None at all. We start from zero and guide you step by step.</p></div></div></div>
+      <div class="acc"><button class="acc-q" aria-expanded="false">Can I do this from home?<span class="pm"></span></button><div class="acc-body"><div><p>Yes. Everything is learned and practised online, from your home, at your own pace.</p></div></div></div>
+      <div class="acc"><button class="acc-q" aria-expanded="false">How much time do I need daily?<span class="pm"></span></button><div class="acc-body"><div><p>Around 1–2 hours a day. It's flexible for students, homemakers and working women.</p></div></div></div>
+      <div class="acc"><button class="acc-q" aria-expanded="false">Do I need a laptop?<span class="pm"></span></button><div class="acc-body"><div><p>No. You can learn everything on your smartphone.</p></div></div></div>
+      <div class="acc"><button class="acc-q" aria-expanded="false">When will I start seeing results?<span class="pm"></span></button><div class="acc-body"><div><p>It depends on your effort and consistency. Our focus is to get you practising real skills from the very first week.</p></div></div></div>
+      <div class="acc"><button class="acc-q" aria-expanded="false">Is there any fee?<span class="pm"></span></button><div class="acc-body"><div><p>Join the WhatsApp Channel and you'll get complete details about the program and fees there.</p></div></div></div>
+      <div class="acc"><button class="acc-q" aria-expanded="false">Can I do this along with studies or a job?<span class="pm"></span></button><div class="acc-body"><div><p>Yes. It's designed for busy girls — learn at your own pace in your spare time.</p></div></div></div>
+    </div>
+  </div>
+</section>
+
+<!-- FINAL CTA -->
+<section class="final">
+  <div class="aurora"><i class="a1"></i><i class="a2"></i></div>
+  <div class="container">
+    <div class="rv">
+      <span class="eyebrow">Your Move</span>
+      <h2>Don't Stay Stuck Another 6 Months Thinking <span class="gt">"I'll Start Soon."</span></h2>
+      <p class="sub">You don't need to be ready. You just need to take the first step.</p>
+      <button class="btn big pulse mag open-any" data-source="Final CTA">👉 Join the WhatsApp Channel</button>
+    </div>
+    <div class="how rv">
+      <h4>📲 How to start?</h4>
+      <ol>
+        <li><b>Fill the quick form</b> with your name, number, age and profession.</li>
+        <li><b>Saniya's WhatsApp Channel opens</b> right after you submit.</li>
+        <li><b>Follow the channel</b> to get program details &amp; your roadmap.</li>
+      </ol>
+    </div>
+  </div>
+</section>
+
+<!-- FOOTER -->
+<footer>
+  <div class="container">
+    <div class="logo" style="justify-content:center"><i>✦</i> Saniya <span class="gt">Mehboob</span></div>
+    <p class="quote">"Your future doesn't change by waiting. It changes when you decide."</p>
+    <button class="linkbtn" id="privacyBtn">Privacy Policy</button>
+    <small>© 2026 Saniya Mehboob. All rights reserved.</small>
+  </div>
+</footer>
+
+<!-- STICKY MOBILE CTA -->
+<div class="sticky" id="sticky"><button class="btn mag open-any" data-source="Sticky Bar">💬 Join the WhatsApp Channel</button></div>
+
+<!-- LIGHTBOX -->
+<div class="lb" id="lb"><button aria-label="Close">×</button><img alt="Feedback"></div>
+
+<!-- FORM -->
+<div class="backdrop" id="backdrop"></div>
+<div class="modal" id="formModal" role="dialog" aria-modal="true">
+  <button class="x" id="closeForm" aria-label="Close">×</button>
+
+  <div id="formView">
+    <h3>✨ Join the Channel</h3>
+    <p class="msub">Fill your details — the WhatsApp Channel opens right after.</p>
+    <div class="girls-note">💖 This program is made only for girls &amp; women.</div>
+    <form id="mainForm" novalidate>
+      <input type="hidden" id="sourceInfo">
+      <div class="f"><label>Full Name *</label><input id="inp_name" type="text" placeholder="Enter your full name" autocomplete="name"><div class="err">Please enter your name</div></div>
+      <div class="f"><label>WhatsApp Number *</label><input id="inp_phone" type="tel" inputmode="numeric" maxlength="10" placeholder="10-digit number" autocomplete="tel"><div class="err">Enter a valid 10-digit number</div></div>
+      <div class="row2">
+        <div class="f"><label>Age *</label><input id="inp_age" type="number" min="15" max="65" placeholder="Your age"><div class="err">Age 15–65</div></div>
+        <div class="f"><label>Profession *</label><select id="inp_profession"><option value="">Select</option><option>Student</option><option>Housewife</option><option>Working Woman</option><option>Other</option></select><div class="err">Select one</div></div>
+      </div>
+      <button type="submit" class="btn" style="width:100%">💬 Submit &amp; Join the Channel</button>
+      <p class="secure">🔒 Your details are safe with us.</p>
+    </form>
+  </div>
+
+  <div class="ok" id="okView">
+    <svg viewBox="0 0 52 52"><circle cx="26" cy="26" r="25"/><path d="M14 27l8 8 16-17"/></svg>
+    <h3>You're in, <span id="okName" class="gt">girl</span>! 🎉</h3>
+    <p>Your details are saved. Saniya's WhatsApp Channel is opening — if it didn't open, tap below.</p>
+    <a class="btn" id="okLink" href="#" target="_blank" rel="noopener">💬 Open WhatsApp Channel</a>
+  </div>
+</div>
+
+<!-- PRIVACY -->
+<div class="modal pp" id="privacyModal" role="dialog" aria-modal="true">
+  <button class="x" id="closePrivacy" aria-label="Close">×</button>
+  <h3 style="color:var(--peach);margin-bottom:16px">Privacy Policy</h3>
+  <p><strong>Information We Collect:</strong> Name, phone, age and profession you provide via our form.</p>
+  <p><strong>How We Use It:</strong> Only to share program info, provide mentorship support and updates. Never sold to third parties.</p>
+  <p><strong>Data Security:</strong> We implement industry-standard measures. Data is accessed only by authorized personnel.</p>
+  <p><strong>Your Rights:</strong> Access, correct, or delete your data anytime by contacting us on WhatsApp.</p>
+  <p><strong>Disclaimer:</strong> Results depend on personal effort and consistency. Earnings vary per individual.</p>
+  <p style="text-align:center;margin-top:16px">© 2026 Saniya Mehboob. All rights reserved.</p>
+</div>
+
+<script>
+/* ===== CONFIG ===== */
+const SCRIPT_URL  = "https://script.google.com/macros/s/AKfycbwaUerhAnk90PCvCDu-h8ghQZwi6e8k97GeS0azTFpmXMxaxNcMMEeqZ9wA9GxMGhWk/exec";
+const CHANNEL_URL = "https://www.whatsapp.com/channel/0029VbCKkAO6xCSSPfBHup00";
+const CLIENT      = "Saniya Mehboob";
+
+/* Student feedback screenshots ke image links yaha daalo (ek-ek line me).
+   Khali rakhoge to "Student Success Stories" section page se hat jaayega. */
+const FEEDBACK_IMAGES = [
+  // "https://i.ibb.co/xxxx/feedback-1.jpg",
+  // "https://i.ibb.co/xxxx/feedback-2.jpg",
+];
+
+const reduce = matchMedia('(prefers-reduced-motion: reduce)').matches;
+const fine   = matchMedia('(hover:hover) and (pointer:fine)').matches;
+const $ = s => document.querySelector(s);
+
+/* Headline: word-by-word reveal */
+(function(){
+  const h = $('#h1'); if (!h || reduce) return;
+  let i = 0;
+  (function walk(n){
+    [...n.childNodes].forEach(c => {
+      if (c.nodeType === 3) {
+        const frag = document.createDocumentFragment();
+        c.textContent.split(/(\s+)/).forEach(t => {
+          if (!t) return;
+          if (/^\s+$/.test(t)) { frag.appendChild(document.createTextNode(' ')); return; }
+          const w = document.createElement('span'); w.className = 'w';
+          const s = document.createElement('span'); s.className = 'wi'; s.style.setProperty('--i', i++); s.textContent = t;
+          w.appendChild(s); frag.appendChild(w);
+        });
+        c.replaceWith(frag);
+      } else if (c.nodeType === 1 && c.tagName !== 'BR') walk(c);
+    });
+  })(h);
+})();
+
+/* Ticker */
+(function(){
+  const words = ['Skills','Confidence','Freedom','Your Own Income','From Home','Made for Girls'];
+  const one = words.map(w => `<span>${w}</span>`).join('');
+  $('#ticker').innerHTML = one + one + one + one;
+})();
+
+/* Feedback marquee (optional) */
+const track = $('#track'), lb = $('#lb'), lbImg = lb.querySelector('img');
+if (!FEEDBACK_IMAGES.length) {
+  $('#stories').remove();
+  const ns = $('#navStories'); if (ns) ns.remove();
+} else {
+  let items = FEEDBACK_IMAGES.slice();
+  while (items.length < 8) items = items.concat(FEEDBACK_IMAGES);
+  const html = items.map((src, i) => `<div class="shot"><img src="${src}" alt="Student feedback ${i + 1}" loading="lazy"></div>`).join('');
+  track.innerHTML = html + html;
+  track.addEventListener('click', e => { const im = e.target.closest('.shot img'); if (im) { lbImg.src = im.src; lb.classList.add('show'); } });
+}
+lb.addEventListener('click', () => lb.classList.remove('show'));
+
+/* Reveal on scroll */
+const rvObs = new IntersectionObserver(es => es.forEach(e => { if (e.isIntersecting) { e.target.classList.add('in'); rvObs.unobserve(e.target); } }), {threshold:.12, rootMargin:'0px 0px -40px 0px'});
+document.querySelectorAll('.rv').forEach(el => rvObs.observe(el));
+
+/* Scroll progress + sticky bar */
+const bar = $('#bar'), sticky = $('#sticky');
+let ticking = false;
+function onScroll(){
+  const h = document.documentElement.scrollHeight - innerHeight;
+  bar.style.transform = `scaleX(${h > 0 ? scrollY / h : 0})`;
+  sticky.classList.toggle('show', scrollY > 520);
+  ticking = false;
+}
+addEventListener('scroll', () => { if (!ticking) { ticking = true; requestAnimationFrame(onScroll); } }, {passive:true});
+onScroll();
+
+/* Spotlight on cards */
+document.querySelectorAll('.spot').forEach(el => el.addEventListener('pointermove', e => {
+  const r = el.getBoundingClientRect();
+  el.style.setProperty('--mx', (e.clientX - r.left) + 'px');
+  el.style.setProperty('--my', (e.clientY - r.top) + 'px');
+}));
+
+/* Desktop-only: cursor glow, magnetic buttons, photo tilt */
+if (fine && !reduce) {
+  const cur = $('#cursor'); let cx = 0, cy = 0, raf = 0;
+  addEventListener('pointermove', e => {
+    cx = e.clientX; cy = e.clientY; cur.classList.add('on');
+    if (!raf) raf = requestAnimationFrame(() => { cur.style.transform = `translate(${cx}px,${cy}px)`; raf = 0; });
+  });
+  document.querySelectorAll('.mag').forEach(b => {
+    b.addEventListener('pointermove', e => {
+      const r = b.getBoundingClientRect();
+      b.style.setProperty('--tx', ((e.clientX - r.left - r.width / 2) * .18) + 'px');
+      b.style.setProperty('--ty', ((e.clientY - r.top - r.height / 2) * .28) + 'px');
+    });
+    b.addEventListener('pointerleave', () => { b.style.setProperty('--tx', '0px'); b.style.setProperty('--ty', '0px'); });
+  });
+  const tilt = $('#tilt'), box = tilt && tilt.closest('.hero-visual');
+  if (tilt) {
+    box.addEventListener('pointermove', e => {
+      const r = tilt.getBoundingClientRect();
+      const x = (e.clientX - r.left) / r.width - .5, y = (e.clientY - r.top) / r.height - .5;
+      tilt.style.transform = `perspective(1000px) rotateY(${x * 14}deg) rotateX(${-y * 10}deg)`;
+    });
+    box.addEventListener('pointerleave', () => tilt.style.transform = '');
+  }
+}
+
+/* Hero dust particles (rose-gold) */
+(function(){
+  const c = $('#dust'); if (!c || reduce) return;
+  const ctx = c.getContext('2d'), dpr = Math.min(devicePixelRatio || 1, 2);
+  const cols = ['255,227,211','247,168,168','238,111,163','201,139,255'];
+  let W, H, ps = [], run = false, vis = true;
+  function size(){
+    const r = c.parentElement.getBoundingClientRect(); W = r.width; H = r.height;
+    c.width = W * dpr; c.height = H * dpr; ctx.setTransform(dpr, 0, 0, dpr, 0, 0);
+    const n = W < 600 ? 26 : 56; ps = [];
+    for (let i = 0; i < n; i++) ps.push({x:Math.random()*W, y:Math.random()*H, r:.6+Math.random()*2, vy:.15+Math.random()*.4, vx:(Math.random()-.5)*.25, ph:Math.random()*6.28, col:cols[i%cols.length]});
+  }
+  function frame(t){
+    if (!run) return;
+    ctx.clearRect(0, 0, W, H);
+    ps.forEach(p => {
+      p.y -= p.vy; p.x += p.vx + Math.sin(t/1600 + p.ph) * .15;
+      if (p.y < -10) { p.y = H + 10; p.x = Math.random() * W; }
+      const a = .25 + .5 * Math.abs(Math.sin(t/900 + p.ph));
+      ctx.fillStyle = `rgba(${p.col},${a * .18})`; ctx.beginPath(); ctx.arc(p.x, p.y, p.r * 3.2, 0, 6.283); ctx.fill();
+      ctx.fillStyle = `rgba(${p.col},${a})`;       ctx.beginPath(); ctx.arc(p.x, p.y, p.r, 0, 6.283); ctx.fill();
+    });
+    requestAnimationFrame(frame);
+  }
+  function go(){ const want = vis && !document.hidden; if (want && !run) { run = true; requestAnimationFrame(frame); } else if (!want) run = false; }
+  size(); addEventListener('resize', size);
+  new IntersectionObserver(e => { vis = e[0].isIntersecting; go(); }).observe(c.parentElement);
+  document.addEventListener('visibilitychange', go); go();
+})();
+
+/* FAQ accordion */
+document.querySelectorAll('.acc-q').forEach(q => q.addEventListener('click', () => {
+  const acc = q.parentElement, was = acc.classList.contains('open');
+  document.querySelectorAll('.acc.open').forEach(a => { a.classList.remove('open'); a.querySelector('.acc-q').setAttribute('aria-expanded', 'false'); });
+  if (!was) { acc.classList.add('open'); q.setAttribute('aria-expanded', 'true'); }
+}));
+
+/* Modals */
+const backdrop = $('#backdrop'), formModal = $('#formModal'), privacyModal = $('#privacyModal'),
+      mainForm = $('#mainForm'), sourceInfo = $('#sourceInfo'), formView = $('#formView'), okView = $('#okView');
+
+function openForm(src){ sourceInfo.value = src || 'Website'; backdrop.classList.add('show'); formModal.classList.add('show'); document.body.style.overflow = 'hidden'; }
+function closeAll(){
+  backdrop.classList.remove('show'); formModal.classList.remove('show'); privacyModal.classList.remove('show'); lb.classList.remove('show');
+  document.body.style.overflow = '';
+  setTimeout(() => { okView.classList.remove('show'); formView.style.display = ''; mainForm.reset(); }, 400);
+}
+document.addEventListener('click', e => { const t = e.target.closest('.open-any'); if (t) { e.preventDefault(); openForm(t.dataset.source); } });
+$('#closeForm').onclick = closeAll;
+$('#closePrivacy').onclick = closeAll;
+backdrop.onclick = closeAll;
+$('#privacyBtn').onclick = () => { backdrop.classList.add('show'); privacyModal.classList.add('show'); document.body.style.overflow = 'hidden'; };
+addEventListener('keydown', e => { if (e.key === 'Escape') closeAll(); });
+
+/* Meta Contact event (once per session) */
+function trackContact(){
+  try {
+    if (typeof fbq !== 'undefined' && !sessionStorage.getItem('saniya_contact')) {
+      fbq('track', 'Contact'); sessionStorage.setItem('saniya_contact', '1');
+    }
+  } catch(e){}
+}
+
+/* Submit → Google Sheet + WhatsApp Channel */
+function setBad(id, bad){ document.getElementById(id).closest('.f').classList.toggle('bad', bad); return !bad; }
+mainForm.addEventListener('submit', e => {
+  e.preventDefault();
+  const name = $('#inp_name').value.trim();
+  const phone = $('#inp_phone').value.replace(/\D/g, '');
+  const age = $('#inp_age').value;
+  const profession = $('#inp_profession').value;
+  const source = sourceInfo.value || 'Website';
+
+  const ok = [
+    setBad('inp_name', name.length < 2),
+    setBad('inp_phone', phone.length !== 10),
+    setBad('inp_age', !age || age < 15 || age > 65),
+    setBad('inp_profession', !profession)
+  ].every(Boolean);
+  if (!ok) return;
+
+  /* 1) Google Sheet (gender fixed 'female' – girls-only page) */
+  const params = new URLSearchParams({ name, phone, age, gender: 'female', profession, source: source + ' | ' + CLIENT });
+  try { fetch(SCRIPT_URL + '?' + params.toString(), { method: 'POST', mode: 'no-cors', keepalive: true }).catch(() => {}); } catch(err){}
+
+  trackContact();
+
+  /* 2) WhatsApp Channel – opened inside the submit gesture so it isn't popup-blocked */
+  const w = window.open(CHANNEL_URL, '_blank');
+  $('#okLink').href = CHANNEL_URL;
+  $('#okName').textContent = name.split(' ')[0];
+  formView.style.display = 'none';
+  okView.classList.add('show');
+  if (!w) setTimeout(() => { location.href = CHANNEL_URL; }, 1600);
+});
+</script>
+</body>
+</html>
